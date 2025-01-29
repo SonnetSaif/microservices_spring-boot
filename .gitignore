@@ -28,3 +28,4 @@ replay_pid*
 inventory-service/mysql-data/
 order-service/mysql-data/
 product-service/mysql-data/
+api-gateway/volume-data/
