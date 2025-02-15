@@ -65,5 +65,7 @@ Each service is a standalone Spring Boot application located in its respective d
    mvn clean install
 
 
-2. **Configure Databases**
+3. **Configure Databases**
+
 Ensure that your database instances are running and accessible. Update the application.properties and docker-compose.yml files in each service to point to your database instances.
+
