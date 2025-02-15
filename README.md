@@ -65,7 +65,7 @@ Each service is a standalone Spring Boot application located in its respective d
 
 3. **Configure Databases**
 
-   Ensure that your database instances are running and accessible. Update the application.properties and docker-compose.yml files in each service to point to your database instances.
+   Ensure that your database instances are running and accessible. Update the `application.properties` and `docker-compose.yml` files in each service to point to your database instances.
 
 
 ## Running the Services
@@ -79,7 +79,7 @@ mvn spring-boot:run
 Alternatively, if you have Docker installed, you can build Docker images and run the services as containers. Ensure you have a `Dockerfile` in each service directory. For Docker,
 
 ```bash
-docker compuse up
+docker compose up
 ```
 
 ## API Gateway
