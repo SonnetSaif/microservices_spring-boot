@@ -67,3 +67,33 @@ Each service is a standalone Spring Boot application located in its respective d
 
    Ensure that your database instances are running and accessible. Update the application.properties and docker-compose.yml files in each service to point to your database instances.
 
+
+## Running the Services
+
+You can run each service individually using Maven:
+
+```bash
+mvn spring-boot:run
+```
+
+Alternatively, if you have Docker installed, you can build Docker images and run the services as containers. Ensure you have a `Dockerfile` in each service directory.
+
+## API Gateway
+
+The API Gateway serves as a single entry point for all client interactions. It routes requests to the appropriate service based on the URL patterns. This project uses Spring Cloud Gateway for this purpose.
+
+## Service Communication
+
+Services communicate with each other using RESTful APIs. For example, the Order Service may call the Product Service to fetch product details. This inter-service communication is facilitated using tools like `RestTemplate` or `FeignClient`.
+
+## Database Configuration
+
+Each service has its own database schema, promoting loose coupling and service autonomy. Ensure that the database configurations in each service's `application.properties` or `application.yml` are set correctly.
+
+## Monitoring and Logging
+
+Monitoring and logging are crucial in a microservices architecture. This project integrates Spring Boot Actuator for monitoring and uses SLF4J with Logback for logging. You can access health checks and metrics at endpoints like `/actuator/health`.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
