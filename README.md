@@ -47,7 +47,7 @@ Each service is a standalone Spring Boot application located in its respective d
 - **Java 11** or higher
 - **Maven 3.6** or higher
 - **Docker** (for containerization, optional)
-- **PostgreSQL** or any preferred relational database
+- **PostgreSQL, MYSQL** or any preferred relational database
 
 ## Getting Started
 
@@ -57,15 +57,13 @@ Each service is a standalone Spring Boot application located in its respective d
    git clone https://github.com/SonnetSaif/microservices_spring-boot.git
    cd microservices_spring-boot
 
-
 2. **Build the Services**
 
    ```bash
    cd api-gateway
    mvn clean install
 
-
 3. **Configure Databases**
 
-Ensure that your database instances are running and accessible. Update the application.properties and docker-compose.yml files in each service to point to your database instances.
+   Ensure that your database instances are running and accessible. Update the application.properties and docker-compose.yml files in each service to point to your database instances.
 
