@@ -62,8 +62,8 @@ Each service is a standalone Spring Boot application located in its respective d
    ```bash
    cd api-gateway
    mvn clean install
-
-  Repeat this for product-service, order-service, and inventory-service.
+   ```
+   Repeat this for product-service, order-service, and inventory-service.
 
 3. **Configure Databases**
 
