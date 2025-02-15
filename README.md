@@ -80,11 +80,11 @@ Alternatively, if you have Docker installed, you can build Docker images and run
 
 ## API Gateway
 
-The API Gateway serves as a single entry point for all client interactions. It routes requests to the appropriate service based on the URL patterns. This project uses Spring Cloud Gateway for this purpose.
+This project uses Spring Cloud Gateway for this purpose. You can
 
 ## Service Communication
 
-Services communicate with each other using RESTful APIs. For example, the Order Service may call the Product Service to fetch product details. This inter-service communication is facilitated using tools like `RestTemplate` or `FeignClient`.
+The inter-service communication is facilitated using tools like `RestClient`.
 
 ## Database Configuration
 
@@ -92,8 +92,5 @@ Each service has its own database schema, promoting loose coupling and service a
 
 ## Monitoring and Logging
 
-Monitoring and logging are crucial in a microservices architecture. This project integrates Spring Boot Actuator for monitoring and uses SLF4J with Logback for logging. You can access health checks and metrics at endpoints like `/actuator/health`.
+This project integrates Spring Boot Actuator for monitoring and uses SLF4J with Logback for logging. You can access health checks and metrics at endpoints like `/actuator/health`.
 
-## Contributing
-
-Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
