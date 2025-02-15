@@ -76,11 +76,15 @@ You can run each service individually using Maven:
 mvn spring-boot:run
 ```
 
-Alternatively, if you have Docker installed, you can build Docker images and run the services as containers. Ensure you have a `Dockerfile` in each service directory.
+Alternatively, if you have Docker installed, you can build Docker images and run the services as containers. Ensure you have a `Dockerfile` in each service directory. For Docker,
+
+```bash
+docker compuse up
+```
 
 ## API Gateway
 
-This project uses Spring Cloud Gateway for this purpose. You can
+This project uses Spring Cloud Gateway for this purpose.
 
 ## Service Communication
 
